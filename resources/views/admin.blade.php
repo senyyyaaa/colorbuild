@@ -89,7 +89,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-12">
+                            <div class="test3">
                                 <button type="submit" class="btn btn-danger">Удалить</button>
                             </div>
                         </form>

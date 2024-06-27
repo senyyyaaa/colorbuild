@@ -470,7 +470,7 @@ main{
 }
 .product-grid2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 40px;
     padding: 20px;
 }
@@ -632,3 +632,15 @@ main{
      height: 400px;
  }
 
+.test1{
+    margin:00px 000px 615px 000px;
+}
+.test2{
+    margin: 0 0 557px 0;
+}
+.test3{
+    margin-bottom:20px ;
+}
+.card{
+    margin-bottom: 144px;
+}

@@ -26,15 +26,15 @@
                         <p><b>Количество:</b> {{ $itemQuantity }}</p>
                         <form action="{{ route('basket.plus', ['id' => $product->id]) }}" method="post" class="d-inline">
                             @csrf
-                            <button type="submit" class="m-0 p-0 border-0 bg-transparent">
-                                больше
+                            <button type="submit" class="podrob"><span>+</span>
+
                             </button>
                         </form>
                         <span class="mx-1">{{ $itemQuantity }}</span>
                         <form action="{{ route('basket.minus', ['id' => $product->id]) }}" method="post" class="d-inline">
                             @csrf
-                            <button type="submit" class="m-0 p-0 border-0 bg-transparent">
-                                меньше
+                            <button type="submit" class="podrob"><span>-</span>
+
                             </button>
                         </form>
 
@@ -44,7 +44,7 @@
 
             <p>Итого: {{ number_format($basketCost, 2, '.', '') }} руб.</p>
         @else
-            <p>Ваша корзина пуста</p>
+            <p class="test2">Ваша корзина пуста</p>
         @endif
     </div>
 @endsection
